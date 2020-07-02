@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import Card from '../components/Card';
+import CardList from '../components/CardList';
+import { robots } from '../robots';
+
 import './App.css';
 
 class App extends Component {
@@ -7,7 +9,7 @@ class App extends Component {
     return (
       <div className='tc'>
         <h1 className='f1'>robofriends</h1>
-        <Card />
+        <CardList robots={robots} />
       </div>
     );
   }
